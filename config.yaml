@@ -1,0 +1,73 @@
+baseURL: 'https://example.com'
+languageCode: en
+defaultContentLanguage: en
+title: 'home'
+theme: KeepIt
+enableRobotsTXT: true
+
+googleAnalytics: ''
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+
+paginate: 12
+enableEmoji: true
+canonifyURLs: true
+blackfriday:
+  hrefTargetBlank: true
+  nofollowLinks: true
+  noreferrerLinks: true
+
+Permalinks:
+  posts: '/:year/:filename/'
+
+menu:
+  main:
+  - name: "Blog"
+    url: "/posts/"
+    weight: 1
+  - name: "About"
+    url: "/about/"
+    weight: 2
+
+params:
+  since: 2020
+  author: "Severyn Lisovskyi"
+  avatar: "/images/profile.png"
+  socialShare: true
+  subtitle: Sofware Engineer @ Opera Software
+  cdn_url: "" # Base CDN URL
+  description: ""
+  keywords: "sev3ryn"
+  # license: 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+  social:
+    GitHub: "sev3ryn"
+    Linkedin: "slisovskyi"
+    Twitter: "sev3ryn"
+    Telegram: "sev3ryn"
+    Email: "smlisovsky@gmail.com"
+  share:
+    Twitter: true
+    Linkedin: true
+
+author:
+  name: "sev3ryn"
+  params:
+    publisher:
+      name: "sev3ryn"
+      logo:
+        url: "/images/profile.png"
+        width: 127
+        height: 40
+    logo:
+      url: "/images/profile.png"
+      width: 127
+      height: 40
+    image:
+      url: "/images/profile.png"
+      width: 127
+      height: 40
+
+# Used only for Seo schema.
+# copyright: "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
