@@ -28,14 +28,14 @@ menu:
     url: "/posts/"
     weight: 1
   - name: "About"
-    url: "/about/"
+    url: "/about"
     weight: 2
 
 params:
   since: 2020
   author: "Severyn Lisovskyi"
   avatar: "/images/profile.png"
-  socialShare: true
+  socialShare: false
   subtitle: Sofware Engineer @ Opera Software
   cdn_url: "" # Base CDN URL
   description: ""
