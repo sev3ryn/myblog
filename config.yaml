@@ -1,26 +1,18 @@
 baseURL: 'https://sev3ryn.netlify.app'
 languageCode: en
 defaultContentLanguage: en
-title: 'home'
-theme: KeepIt
-enableRobotsTXT: true
 
-googleAnalytics: ''
+title: "Severyn Lisovskyi's Blog"
+theme: LoveIt
+
 sitemap:
   changefreq: monthly
   filename: sitemap.xml
   priority: 0.5
 
-paginate: 12
-enableEmoji: true
-canonifyURLs: true
-blackfriday:
-  hrefTargetBlank: true
-  nofollowLinks: true
-  noreferrerLinks: true
-
-Permalinks:
-  posts: '/:year/:filename/'
+author:
+  name: "Severyn Lisovskyi"
+  email: "sm.lisovsky@gmail.com"
 
 menu:
   main:
@@ -31,43 +23,60 @@ menu:
     url: "/about"
     weight: 2
 
+markup:
+  highlight:
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses: false
+
 params:
-  since: 2020
-  author: "Severyn Lisovskyi"
-  avatar: "/images/profile.png"
-  socialShare: false
-  subtitle: Sofware Engineer @ Opera Software
-  cdn_url: "" # Base CDN URL
-  description: ""
-  keywords: "sev3ryn"
-  # license: 'Released under <a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+  version: "0.2.X"
+  description: "random thoughts"
+  keywords: ["Blog"]
+  images: ["/images/profile.png"]
+  dateFormat: "02 Jan 2006"
+
+  # search:
+  #   enable: true
+  header:
+    title:
+      name: "sev3ryn"
+  footer:
+    since: 2020
+    hugo: false
+
+  home:
+    profile:
+      avatarURL: "/images/profile.png"
+      title: "Severyn Lisovskyi"
+      subtitle: Sofware Engineer @ Opera Software
+      social: true
+      typeit: false
+
   social:
     GitHub: "sev3ryn"
     Linkedin: "slisovskyi"
     Twitter: "sev3ryn"
     Telegram: "sev3ryn"
-    Email: "smlisovsky@gmail.com"
-  share:
-    Twitter: true
-    Linkedin: true
+    Email: "sm.lisovsky@gmail.com"
+    RSS: true
 
-author:
-  name: "sev3ryn"
-  params:
-    publisher:
-      name: "sev3ryn"
-      logo:
-        url: "/images/profile.png"
-        width: 127
-        height: 40
-    logo:
-      url: "/images/profile.png"
-      width: 127
-      height: 40
-    image:
-      url: "/images/profile.png"
-      width: 127
-      height: 40
+  page:
+    share:
+      enable: true
+      Twitter: true
+      Reddit: true
+    comment:
+      enable: true
+      telegram:
+        enable: true
+        siteID: IU46e9Fy
+      # utterances:
+      #   enable: true
+      #   repo: "sev3ryn/myblog"
+      #   label: "comment"
 
-# Used only for Seo schema.
-# copyright: "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+  analytics:
+    enable: true
+    google:
+      id: UA-167432595-1
