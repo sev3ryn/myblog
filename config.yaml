@@ -73,13 +73,13 @@ params:
       Reddit: true
     comment:
       enable: true
-      telegram:
-        enable: true
-        siteID: IU46e9Fy
-      # utterances:
+      # telegram:
       #   enable: true
-      #   repo: "sev3ryn/myblog"
-      #   label: "comment"
+      #   siteID: IU46e9Fy
+      utterances:
+        enable: true
+        repo: "sev3ryn/myblog"
+        label: "comment"
 
   analytics:
     enable: true
