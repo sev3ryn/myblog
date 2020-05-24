@@ -38,12 +38,17 @@ params:
 
   # search:
   #   enable: true
+  list:
+    dateFormat: "02 Jan 2006"
+  section:
+    dateFormat: "02 Jan 2006"
+
   header:
     title:
       name: "sev3ryn"
   footer:
     since: 2020
-    hugo: false
+    hugo: true
 
   home:
     profile:
